@@ -1,6 +1,98 @@
+/* Style qui s'applique à toute la page*/
+
 body {
     font-family: 'Raleway', sans-serif;
+    padding: 2% 3%;
 }
+
+h1 {
+    font-weight: 800;
+    font-size: 21px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* Style du header*/
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+      
+}
+
+.logo {
+    width: -moz-min-content;
+    width: min-content;
+}
+
+article.menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 12%;
+        
+}
+
+.menu__item {
+  text-decoration: none;
+  padding: 15%;
+  font-size: 15px;
+    
+}
+
+.menu__item--hébergement {
+    color:#0065FC;
+    border-top: solid #0065FC 1px;
+    font-weight: 500;
+    }
+
+.menu__item--inscription {
+    font-weight: bolder;
+    color: #0065FC;
+}
+
+
+/* Style de la bar de recherche*/
+
+.recherche__bar {
+    border: #F2F2F2 solid 1px;
+    border-radius: 25%;
+    position: relative;
+    width: 150px;
+   
+}
+
+.recherche__icon {
+    position: absolute;
+    top: 2px;
+    background-color: #F2F2F2;
+    width: 90px;
+}
+
+input[type="search"] {
+    padding-left: 70px;
+}
+
+
+/* Style des filtres*/
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filtres__bulle {
+    border-radius: 30%;
+    border: solid #F2F2F2 3px;
+
+}
+
+
+
 
 #hébergement {
     background-color: #F2F2F2;
@@ -13,6 +105,8 @@ body {
 #footer {
     background-color: #F2F2F2;
 }
+
+/* Style des icones */
 
 figure {
     background-color: white;
