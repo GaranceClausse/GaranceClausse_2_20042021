@@ -1,3 +1,33 @@
-h1 {
-    
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#hébergement {
+    background-color: #F2F2F2;
+}
+
+#populaire {
+    background-color: #F2F2F2; 
+}
+
+#footer {
+    background-color: #F2F2F2;
+}
+
+figure {
+    background-color: white;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+    color: #0065FC;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+}
+
+.note--blue, .fa-info {
+    color: #0065FC;
+}
+
+.note--grey {
+    color: #F2F2F2;
 }
