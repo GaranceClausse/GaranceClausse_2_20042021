@@ -1,6 +1,151 @@
+/* Style qui s'applique à toute la page*/
+
 body {
     font-family: 'Raleway', sans-serif;
+    padding: 2% 3%;
 }
+
+h1 {
+    font-weight: 800;
+    font-size: 21px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* Style du header*/
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+      
+}
+
+.logo {
+    width: -moz-min-content;
+    width: min-content;
+}
+
+article.menu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 12%;
+        
+}
+
+.menu__item {
+  text-decoration: none;
+  padding: 15%;
+  font-size: 15px;
+    
+}
+
+.menu__item--hébergement {
+    color:#0065FC;
+    border-top: solid #0065FC 1px;
+    font-weight: 500;
+    }
+
+.menu__item--inscription {
+    font-weight: bolder;
+    color: #0065FC;
+}
+
+
+/* Style de la bar de recherche*/
+
+.recherche__bar {
+    display: inline-flexbox;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #F2F2F2;
+    border-radius: 15% 50%;
+    align-items: center;
+    padding: 15px 0px;
+   
+}
+
+.recherche__icon {
+    
+    background-color: #F2F2F2;
+    padding: 12px 15px;
+    margin-left: 0;
+}
+
+.recherche__button{
+    background-color: #0065FC;
+    color: white;
+    padding: 12px 15px;
+    margin-right: 0;
+}
+
+.recherche__input {
+    border: 0;
+}
+
+.recherche__input:hover {
+    border: 0;
+}
+
+.recherche__input:focus {
+    outline: 0;
+}
+
+
+/* Style des filtres*/
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 12px;
+    align-items: center;
+       
+    
+}
+
+.filtres__bulle {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding-right: 7px;
+        
+    
+    border: #F2F2F2 solid 2px;    
+    border-radius : 20%/ 50%;
+
+    align-items: center;  
+
+}
+
+.filtres__icon {
+    background-color: #deebff;
+    color: #0065FC;
+    border-radius: 50%;
+    margin: 0 7px 0 0;
+    padding: 15px;
+    
+    }
+
+
+    .info {
+        color: #0065FC;
+        border-radius: 75%;
+        border: #F2F2F2 solid 1px;
+        margin: 10px;
+        padding: 10px;
+          
+    }
+
+      
+   
+      
+
+
+
 
 #hébergement {
     background-color: #F2F2F2;
@@ -13,6 +158,8 @@ body {
 #footer {
     background-color: #F2F2F2;
 }
+
+/* Style des icones */
 
 figure {
     background-color: white;

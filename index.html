@@ -5,20 +5,23 @@
     <title>Trouvez un hébergement de rêve!</title>
     <meta charset="utf-8" name="description" content="site de référence en réservation de vacances">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+
 </head>
 
 
 <body>
     <header>
-        <img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo Reservia" />
+        <img src="Projet+2+-+Reservia+FR/Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo Reservia"
+            class="logo" />
 
-        <article id="menu">
-            <a href="#hébergement">Hébergements</a>
-            <a href="#activité">Activités</a>
-            <a href="" class="menu__inscription">S'inscrire</a>
+        <article class="menu">
+            <a href="#hébergement" class="menu menu__item menu__item--hébergement">Hébergements</a>
+            <a href="#activité" class="menu menu__item">Activités</a>
+            <a href="" class="menu menu__item menu__item--inscription">S'inscrire</a>
 
         </article>
 
@@ -29,18 +32,23 @@
     <section id="recherche">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h3>En plein centre ville ou en pleine nature</h3>
-        <i class="fas fa-map-marker-alt"><input type="search" id="rechercher" name="rechercher"
-                value="Marseille, France"></i><label for="rechercher">Rechercher</label>
+        <span class="recherche__bar">
+            <span class="recherche__icon"><i class="fas fa-map-marker-alt"></i></span><input type="search"
+                id="rechercher" name="rechercher" value="Marseille, France" class="recherche__input"><label
+                for="rechercher" class="recherche__button">Rechercher</label>
+        </span>
 
 
         <!--Filtres-->
-        <h2>Filtres</h2>
-        <h2 class="filtres"><i class="fas fa-money-bill-wave"></i>Economique</h2>
-        <h2 class="filtres"><i class="fas fa-child"></i>Familial</h2>
-        <h2 class="filtres"><i class="fas fa-heart"></i>Romantique</h2>
-        <h2 class="filtres"><i class="fas fa-dog"></i>Animaux autorisés</h2>
+        <article class="filtres">
+            <h2>Filtres</h2>
+            <h2 class="filtres__bulle"><i class="fas fa-money-bill-wave filtres__icon"></i>Economique</h2>
+            <h2 class="filtres__bulle"><i class="fas fa-child filtres__icon"></i>Familial</h2>
+            <h2 class="filtres__bulle"><i class="fas fa-heart filtres__icon"></i>Romantique</h2>
+            <h2 class="filtres__bulle"><i class="fas fa-dog filtres__icon"></i>Animaux autorisés</h2>
+        </article>
 
-        <h3><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</h3>
+        <h3><i class="fas fa-info info"></i> Plus de 500 logements sont disponibles dans cette ville</h3>
 
     </section>
 
