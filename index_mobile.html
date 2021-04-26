@@ -16,12 +16,13 @@
 <body>
 
     <header>
+        <nav class="nav">
         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/logo/Reservia.svg" alt="logo Reservia"
             class="header__logo" />
-        <nav class="nav">
+        
             <ul class="menu">
                 <li><a href="#accomodation" class="menu__item menu__item--accomodation">Hébergements</a></li>
-                <li><a href="#activity" class="menu__item">Activités</a></li>
+                <li><a href="#activity" class="menu__item menu__item--activity">Activités</a></li>
                 <li><a href="" class="menu__item menu__item--inscription">S'inscrire</a></li>
             </ul>
         </nav>
@@ -35,8 +36,8 @@
             <h3 class="search__title">En plein centre ville ou en pleine nature</h3>
             <span class="search__bar">
                 <span class="search__icon"><i class="fas fa-map-marker-alt"></i></span><input type="search" id="search1"
-                    name="rechercher" value="  Marseille, France" class="search__input"><label for="search1"
-                    class="search__button">Rechercher</label>
+                    name="rechercher" value="  Marseille, France" class="search__input"><i class="fas fa-search"></i><button value="search1"
+                    class="search__button">Rechercher</button>
             </span>
 
             <!--filtres-->
@@ -66,9 +67,9 @@
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/hebergements/4_small/cannebière.jpg"
                             alt="photo de l'hôtel" class="pic__h">
                         <div class="photo__band">
-                            <h2 class="img-name">Auberge de la Cannebière</h2>
+                            <h2 class="img-name img-name--a">Auberge la Cannebière</h2>
                             <h3 class="photo__price">Nuit à partir de 25€</h3>
-                            <div class="note">
+                            <div class="note note--a">
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
@@ -84,9 +85,9 @@
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/hebergements/4_small/port.jpg"
                             alt="photo de l'hôtel" class="pic__h">
                         <div class="photo__band">
-                            <h2 class="img-name">Hôtel du port</h2>
+                            <h2 class="img-name img-name--a">Hôtel du port</h2>
                             <h3 class="photo__price">Nuit à partir de 52€</h3>
-                            <div class="note">
+                            <div class="note note--a">
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
@@ -102,9 +103,9 @@
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/hebergements/4_small/mouettes.jpg"
                             alt="photo de l'hôtel" class="pic__h">
                         <div class="photo__band">
-                            <h2 class="img-name">Hôtel Les mouettes</h2>
+                            <h2 class="img-name img-name--a">Hôtel Les mouettes</h2>
                             <h3 class="photo__price">Nuit à partir de 76€</h3>
-                            <div class="note">
+                            <div class="note note--a">
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
@@ -119,9 +120,9 @@
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/hebergements/4_small/mer.jpg"
                             alt="photo de l'hôtel" class="pic__h">
                         <div class="photo__band">
-                            <h2 class="img-name">Hôtel de la mer</h2>
+                            <h2 class="img-name img-name--a">Hôtel de la mer</h2>
                             <h3 class="photo__price">Nuit à partir de 46€</h3>
-                            <div class="note">
+                            <div class="note note--a">
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
@@ -136,9 +137,9 @@
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/hebergements/4_small/panier.jpg"
                             alt="photo de l'hôtel" class="pic__h">
                         <div class="photo__band">
-                            <h2 class="img-name">Auberge Le Panier</h2>
+                            <h2 class="img-name img-name--a">Auberge Le Panier</h2>
                             <h3 class="photo__price">Nuit à partir de 23€</h3>
-                            <div class="note">
+                            <div class="note note--a">
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
@@ -153,9 +154,9 @@
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/hebergements/4_small/amina.jpg"
                             alt="photo de l'hôtel" class="pic__h">
                         <div class="photo__band">
-                            <h2 class="img-name">Hôtel chez Amina</h2>
+                            <h2 class="img-name img-name--a">Hôtel chez Amina</h2>
                             <h3 class="photo__price">Nuit à partir de 96€</h3>
-                            <div class="note">
+                            <div class="note note--a">
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
                                 <i class="fas fa-star note--blue"></i>
@@ -243,7 +244,9 @@
                 <figure class="photo__a photo__a--big">
                     <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/activites/4_small/port.jpg"
                         alt="photo du vieux port" class="pic__a pic__a--big">
-                    <h2 class="img-name photo__band--a photo__band--ab">Vieux Port</h2>
+                    <div class="photo__band--a photo__band--ab">
+                        <h2 class="img-name ">Vieux Port</h2>
+                    </div>
                 </figure>
 
 
@@ -251,14 +254,18 @@
                     <figure class="photo__a photo__a--medium">
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/activites/4_small/pomegue.jpg"
                             alt="photo du fort de Pomègues" class="pic__a pic__a--medium">
-                        <h2 class="img-name photo__band--a photo__band--am">Fort de Pomègues</h2>
+                        <div class="photo__band--a photo__band--am">
+                            <h2 class="img-name">Fort de Pomègues</h2>
+                        </div>
                     </figure>
 
 
                     <figure class="photo__a photo__a--small">
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/activites/4_small/frioul.jpg"
                             alt="photo des îles du Frioul" class="pic__a pic__a--small">
-                        <h2 class="img-name photo__band--a photo__band--as">Iles du Frioul</h2>
+                        <div class="photo__band--a photo__band--as">
+                            <h2 class="img-name">Iles du Frioul</h2>
+                        </div>
                     </figure>
                 </figure>
 
@@ -266,7 +273,9 @@
                 <figure class="photo__a photo__a--big">
                     <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/activites/4_small/parc.jpg"
                         alt="photo du parc National des Calanques" class="pic__a pic__a--big">
-                    <h2 class="img-name photo__band--a photo__band--ab">Parc National des Calanques</h2>
+                    <div class="photo__band--a photo__band--ab">
+                        <h2 class="img-name">Parc National des Calanques</h2>
+                    </div>
                 </figure>
 
 
@@ -274,14 +283,18 @@
                     <figure class="photo__a photo__a--small">
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/activites/4_small/notre-dame.jpg"
                             alt="photo de Notre-Dame de la Garde" class="pic__a pic__a--small">
-                        <h2 class="img-name photo__band--a photo__band--as">Notre-Dame-de-la-Garde</h2>
+                        <div class="photo__band--a photo__band--as">
+                            <h2 class="img-name">Notre-Dame-de-la-Garde</h2>
+                        </div>
                     </figure>
 
 
                     <figure class="photo__a photo__a--medium">
                         <img src="Projet+2+-+Reservia+FR/Projet2-Reservia/images/activites/4_small/longchamp.jpg"
                             alt="photo du Parc Longchamp" class="pic__a pic__a--medium">
-                        <h2 class="img-name photo__band--a photo__band--am">Parc Longchamp</h2>
+                        <div class="photo__band--a photo__band--am">
+                            <h2 class="img-name">Parc Longchamp</h2>
+                        </div>
                     </figure>
                 </figure>
 
