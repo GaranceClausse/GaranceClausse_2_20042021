@@ -76,13 +76,14 @@ figure:active {
 }
 
 .header__logo {
-    margin: 10px 40px;
+    margin: 10px 0px 10px 40px;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
+    padding-right: 60px;
 }
 
 
@@ -102,7 +103,7 @@ figure:active {
     text-decoration: none;
     color: black;
     font-size: 15px;
-    padding: 30px 10px 20px 10px;
+    padding: 30px 20px 20px 20px;
 }
 
 .menu__item:hover {
@@ -185,9 +186,6 @@ figure:active {
         top: 35px;
         right: 15%;
     }
-    
-    
-
     
   }
 
@@ -357,13 +355,13 @@ figure:active {
 
     #accomodation {
         border-radius: 2%;
-        width: 65%;
+        width: 60%;
         margin: 10px 15px;
     }
 
     #popular {
         border-radius: 2%;
-        width: 30%;
+        width: 35%;
         margin: 10px 15px;
     }
 
@@ -490,7 +488,7 @@ figure:active {
 
     }
 
-    @media all and (max-width: 796px) {
+    @media all and (max-width: 991px) {
         .photo__h {
             box-shadow: 5px 5px 10px #F2F2F2;
             width: 300px;
@@ -596,7 +594,15 @@ figure:active {
 
         @media all and (max-width: 991px) and (min-width: 796px) {
 
-            .photo__p {
+            #popular {
+                width: 45%;
+            }
+
+            #accomodation {
+                width: 50%;
+            }
+
+            /* .photo__p {
                 
                 flex-direction: column;
                 width: 180px;
@@ -626,9 +632,9 @@ figure:active {
                 line-height: 8px;
                 left: 0;
         
-            }
+            } */
         
-        }
+        } 
 
        
 
