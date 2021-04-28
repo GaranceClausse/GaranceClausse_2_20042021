@@ -49,7 +49,7 @@ figure {
     background-color: white;
 }
 
-figure:active {
+a:active {
     background-color: #0065FC;
 }
 
@@ -637,6 +637,7 @@ figure:active {
         margin: 5px;
 
     }
+    
 
     .photo__a--big {
         height: 380px;
@@ -698,9 +699,13 @@ figure:active {
 
            
         .pic__a {
-            width: auto;
+            width: 300px;
             height: 120px;
                         
+        }
+
+        .pic__a--big {
+            width: auto;
         }
     
     }
