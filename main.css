@@ -58,6 +58,10 @@ figure {
     background-color: white;
 }
 
+a:active {
+    background-color: #0065FC;
+}
+
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
     color: #0065FC;
     background-color: #F2F2F2;
@@ -89,7 +93,7 @@ figure {
     margin: 10px 0px 10px 40px;
 }
 
-.nav__menu {
+.menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
@@ -136,7 +140,7 @@ figure {
     
 }
 
-  @media all and (max-width: 796px) {
+  @media all and (max-width: 600px) {
 
     header {
         display: block;
@@ -148,7 +152,7 @@ figure {
     
     }
 
-    .nav__menu {
+    .menu {
         width: 100%;
     }
 
@@ -312,9 +316,13 @@ figure {
     flex-direction: row;
     margin: 10px 12px 0 0;
     padding-right: 10px;
-    border: #F2F2F2 solid 2px;   
+
+
+    border: #F2F2F2 solid 2px;    
     border-radius : 20%/ 50%;
-    align-items: center;
+
+    align-items: center;  
+
 }
 
 .filter__bubble:hover {
@@ -451,8 +459,7 @@ figure {
 
         #popular {
             border-radius: 0%;
-            margin: 0;
-                      
+            
         }
 
         .popular__offer {
@@ -482,11 +489,6 @@ figure {
         box-shadow: 5px 5px 10px #949393;
         
     }
-
-    .photo__h:hover {
-        box-shadow: 5px 5px 10px #DEEBFF;
-    }
-    
 
     .pic__h {
         padding: 2% 2% 0% 2%;
@@ -577,10 +579,6 @@ figure {
                         
         }
 
-        .photo__p:hover {
-            box-shadow: 5px 5px 10px #DEEBFF;
-        }
-
         .pic__p {
             padding: 2% 0% 2% 2%;
             border-radius: 20px 0 0 20px;     
@@ -645,10 +643,6 @@ figure {
         box-shadow: 5px 5px 10px #949393;
         margin: 5px;
 
-    }
-
-    .photo__a:hover {
-        box-shadow: 5px 5px 10px #DEEBFF;
     }
     
 
@@ -717,8 +711,6 @@ figure {
 
             
     }
-
-    
 
     
        
