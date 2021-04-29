@@ -6,10 +6,19 @@
     
 }
 
-@media all and (max-width: 1200px)
-{
+@media all and (max-width: 1200px) {
     #page {
         width: auto;
+        font-size: auto;
+        
+    }
+ 
+}
+
+@media all and (max-width:796px) {
+    #page {
+        font-size: 120%;
+        height: auto;
     }
 }
 
