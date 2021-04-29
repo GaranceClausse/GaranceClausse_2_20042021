@@ -58,9 +58,6 @@ figure {
     background-color: white;
 }
 
-a:active {
-    background-color: #0065FC;
-}
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
     color: #0065FC;
@@ -140,7 +137,7 @@ a:active {
     
 }
 
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 796px) {
 
     header {
         display: block;
@@ -316,11 +313,8 @@ a:active {
     flex-direction: row;
     margin: 10px 12px 0 0;
     padding-right: 10px;
-
-
     border: #F2F2F2 solid 2px;    
     border-radius : 20%/ 50%;
-
     align-items: center;  
 
 }
@@ -459,6 +453,7 @@ a:active {
 
         #popular {
             border-radius: 0%;
+            margin: 0;
             
         }
 
@@ -488,6 +483,10 @@ a:active {
         margin: 0 2% 9% 1%;
         box-shadow: 5px 5px 10px #949393;
         
+    }
+
+    .photo__h:hover {
+        box-shadow: 5px 5px 10px #DEEBFF;
     }
 
     .pic__h {
@@ -579,6 +578,10 @@ a:active {
                         
         }
 
+        .photo__p:hover {
+            box-shadow: 5px 5px 10px #DEEBFF;
+        }
+
         .pic__p {
             padding: 2% 0% 2% 2%;
             border-radius: 20px 0 0 20px;     
@@ -644,6 +647,10 @@ a:active {
         margin: 5px;
 
     }
+
+    .photo__a:hover {
+        box-shadow: 5px 5px 10px #DEEBFF;
+    }
     
 
     .photo__a--big {
@@ -708,8 +715,7 @@ a:active {
             height: 120px;
                         
         }
-
-            
+           
     }
 
     
