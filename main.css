@@ -30,6 +30,7 @@ h1 {
 h3 {
     font-weight: 300;
     font-size: 15px;
+    
 }
 
 a {
@@ -346,11 +347,15 @@ figure {
     font-size: 12px;
     border-radius: 50%;
     border: 1px #F2F2F2 solid;
-    margin: 0 7px 20px 0;
+    margin: 0 7px 3px 0;
     padding: 5px 8px;
-        
-
+    
     }
+
+.info__title {
+    margin: 20px 0;
+}
+
 
     /* Style du milieu de page : accomodations populaires*/
 
@@ -545,6 +550,12 @@ figure {
     .popular__title {
         font-weight: 800;
         font-size: 21px;
+
+    }
+    @media all and (max-width: 991px) {
+       .popular__title {
+           margin: 8px 40px;
+       }     
     }
 
     .popular__header {
@@ -591,16 +602,16 @@ figure {
         }
 
         .photo__price--p {
-          margin-bottom: 15%;
+          margin-bottom: 20%;
         }
 
         @media all and (max-width: 991px) {
             .photo__p {
-                height: 175px; 
+                height: 135px; 
             }
 
             .pic__p {
-                height: 165px;
+                height: 125px;
             }
         }
 
@@ -691,7 +702,7 @@ figure {
         }
 
         .activity__title {
-            text-align: center;
+            padding-left: 20px;
         }
 
         .activity__doble {
