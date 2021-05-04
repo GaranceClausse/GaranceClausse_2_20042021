@@ -216,11 +216,12 @@ figure {
 }
 
 .search__bar {
-    width: 100%;
+    width: 300px;
     overflow: hidden;
     border-radius: 20%;
     align-items: center;
     padding: 11px 0px;
+    border: 1px solid #F2F2F2;
     
 
 
@@ -245,15 +246,13 @@ figure {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 15px;
-    position: absolute;
-    left: 260px;
     z-index: 2;
     
 }
 
 .search__input {
-    border: 1px solid #F2F2F2;
-    padding: 12px 0;
+    border: none;
+    padding: 10px 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 15px;
