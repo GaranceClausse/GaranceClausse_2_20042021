@@ -6,10 +6,19 @@
     
 }
 
-@media all and (max-width: 1200px)
-{
+@media all and (max-width: 1200px) {
     #page {
         width: auto;
+        font-size: auto;
+        
+    }
+ 
+}
+
+@media all and (max-width:796px) {
+    #page {
+        font-size: 120%;
+        height: auto;
     }
 }
 
@@ -21,6 +30,12 @@ h1 {
 h3 {
     font-weight: 300;
     font-size: 15px;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 #accomodation {
@@ -44,14 +59,11 @@ figure {
     background-color: white;
 }
 
-figure:active {
-    background-color: #0065FC;
-}
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
     color: #0065FC;
     background-color: #F2F2F2;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 .note--blue, .fa-info {
@@ -126,7 +138,7 @@ figure:active {
     
 }
 
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 796px) {
 
     header {
         display: block;
@@ -204,11 +216,12 @@ figure:active {
 }
 
 .search__bar {
-    width: 100%;
+    width: 300px;
     overflow: hidden;
     border-radius: 20%;
     align-items: center;
     padding: 11px 0px;
+    border: 1px solid #F2F2F2;
     
 
 
@@ -233,15 +246,13 @@ figure:active {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 15px;
-    position: absolute;
-    left: 260px;
     z-index: 2;
     
 }
 
 .search__input {
-    border: 1px solid #F2F2F2;
-    padding: 12px 0;
+    border: none;
+    padding: 10px 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 15px;
@@ -258,7 +269,7 @@ figure:active {
     
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 796px) {
     .search__button {
         visibility: hidden;
         
@@ -302,11 +313,8 @@ figure:active {
     flex-direction: row;
     margin: 10px 12px 0 0;
     padding-right: 10px;
-
-
     border: #F2F2F2 solid 2px;    
     border-radius : 20%/ 50%;
-
     align-items: center;  
 
 }
@@ -338,11 +346,15 @@ figure:active {
     font-size: 12px;
     border-radius: 50%;
     border: 1px #F2F2F2 solid;
-    margin: 0 7px 20px 0;
+    margin: 0 7px 3px 0;
     padding: 5px 8px;
-        
-
+    
     }
+
+.info__title {
+    margin: 20px 0;
+}
+
 
     /* Style du milieu de page : accomodations populaires*/
 
@@ -355,13 +367,13 @@ figure:active {
 
     #accomodation {
         border-radius: 2%;
-        width: 60%;
+        width: 870px;
         margin: 10px 15px;
     }
 
     #popular {
-        border-radius: 2%;
-        width: 35%;
+        border-radius: 20px;
+        width: 450px;
         margin: 10px 15px;
     }
 
@@ -371,10 +383,23 @@ figure:active {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        margin: 10px 20px 20px 20px;
 
     }
+
+    .popular__offer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        margin: 10px 20px 20px 20px;
+    }
+
     .accomodation__title {
-        margin: 10px 0px 5px 10px;
+        margin: 25px 0px 5px 10px;
         padding: 3%;
         font-weight: 800;
         font-size: 21px;
@@ -395,6 +420,25 @@ figure:active {
         #popular {
             width: auto;
         }
+        
+        .accomodation__title {
+            text-align: center;
+        }
+
+        
+    }
+
+    @media all and (max-width: 1024px) and (min-width: 796px) {
+
+        #popular {
+            width: 45%;
+        }
+
+        #accomodation {
+            width: 50%;
+        }
+
+                        
     }
 
 
@@ -413,13 +457,18 @@ figure:active {
 
         #popular {
             border-radius: 0%;
+            margin: 0;
+            
         }
 
         .popular__offer {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            
         }
+
+        
     }
 
         
@@ -431,100 +480,66 @@ figure:active {
     .photo__h {
         display: flex;
         flex-direction: column;
-        width: 230px;
+        width: 220px;
         height: 180px;
         border-radius: 10%;
         background-color: white;
-        margin: 0 2% 5% 1%;
-        position: relative;
-        overflow: hidden;
+        margin: 0 2% 9% 1%;
+        box-shadow: 5px 5px 10px #949393;
+        
+    }
 
-
+    .photo__h:hover {
+        box-shadow: 5px 5px 10px #DEEBFF;
     }
 
     .pic__h {
         padding: 2% 2% 0% 2%;
-        border-radius: 10% 10% 0% 0%;     
-        z-index: 1;
-        background-size: cover;
-        width: 220px;
-        height: 170px;
-        position: absolute;
-        top: -20%;
-
-
+        border-radius: 20px 20px 0 0;     
+        width: 210px;
+        height: 105px;
+        
     }
 
     .img-name {
         font-size: 15px;
         font-weight: 800;
-        padding: 1% 3% 0% 6%;
+        padding: 0 6%;
         word-break: break-word;
-        line-height: 18px;
-        margin-bottom: 7px;
+        
 
     }
 
     .photo__price {
         font-size: 12px;
         font-weight: 600;
-        margin: 0% 7% 4% 6%;
+        margin: 0 6%;
 
     }
 
     .note {
-        margin: 0% 7% 0% 6%;
+        margin: 3% 6%;
         font-size: 10px;
     }
 
     .photo__band {
-        position: absolute;
-        background-color: white;
-        z-index: 2;
-        width: 230px;
-        height: 33px;
-        top: 60%;
+        padding-bottom: 20px;
         line-height: 8px;
 
     }
 
     @media all and (max-width: 991px) {
         .photo__h {
-            box-shadow: 5px 5px 10px #F2F2F2;
+            box-shadow: 5px 5px 10px #949393;
             width: 300px;
-            height: 180px;
-            border: 2px solid white;
-            border-radius: 10%;
-            background-color: white;
-            
+            height: 195px;
             
         }
 
         .pic__h {
-            padding: 2% 0% 2% 2%;
-            border-radius: 10% 0% 0% 10%;     
-            z-index: 1;
-            background-size: cover;
-            width: 300px;
-            height: auto;
-            position: absolute;
-            top:-40%;
-            
-        }
-
-        .photo__band {
-            position: absolute;
-            background-color: white;
-            z-index: 2;
-            width: 300px;
-            height: 65px;
-            top: 65%;
-            line-height: 6px;
-                
-        }
-
-        .img-name--a {
-            margin-top: 1%;
+            width: 290px;
+            height: 120px;
+                        
         }
 
     }
@@ -534,6 +549,12 @@ figure:active {
     .popular__title {
         font-weight: 800;
         font-size: 21px;
+
+    }
+    @media all and (max-width: 991px) {
+       .popular__title {
+           margin: 8px 40px;
+       }     
     }
 
     .popular__header {
@@ -544,9 +565,13 @@ figure:active {
 
     .popular__icon {
         position: absolute;
-        top: 35%;
+        top: 30%;
         right: 10%;
-        }
+    }
+
+    .popular__offer a {
+        padding: 3%;
+    }
 
 
         /* Style des photos de popular */
@@ -556,85 +581,40 @@ figure:active {
             flex-direction: row;
             width: 300px;
             height: 130px;
-            border: 2px solid white;
-            border-radius: 10%;
+            border-radius: 20px;
             background-color: white;
             margin: 0 3% 7% 3%;
-            position: relative;
-            overflow: hidden;
+            box-shadow: 5px 5px 10px #949393;
+                        
+        }
 
+        .photo__p:hover {
+            box-shadow: 5px 5px 10px #DEEBFF;
         }
 
         .pic__p {
             padding: 2% 0% 2% 2%;
-            border-radius: 10% 0% 0% 10%;     
-            z-index: 1;
-            background-size: cover;
-            width: 150px;
+            border-radius: 20px 0 0 20px;     
+            width: 130px;
             height: 120px;
-            position: absolute;
-            right: 60%;
-
+            
         }
 
-        .photo__band--p {
-            position: absolute;
-            background-color: white;
-            z-index: 2;
-            width: 180px;
-            height: 33px;
-            left: 45%;
-
+        .photo__price--p {
+          margin-bottom: 20%;
         }
 
-        .note--p {
-            position: relative;
-            top: 80%;
-        }
-
-        @media all and (max-width: 991px) and (min-width: 796px) {
-
-            #popular {
-                width: 45%;
+        @media all and (max-width: 991px) {
+            .photo__p {
+                height: 135px; 
             }
 
-            #accomodation {
-                width: 50%;
-            }
-
-            /* .photo__p {
-                
-                flex-direction: column;
-                width: 180px;
-                height: 230px;
-                      
-        
-            }
-        
             .pic__p {
-                width: 170px;
-                height: auto;
-                right: 2%;       
-        
+                height: 125px;
             }
-        
-                    
-                   
-            .note--p {
-                bottom: 10%;
-                top: 0;
-            }
-        
-            .photo__band--p {
-                width: 180px;
-                height: 120px;
-                top: 60%;
-                line-height: 8px;
-                left: 0;
-        
-            } */
-        
-        } 
+        }
+
+         
 
        
 
@@ -655,29 +635,36 @@ figure:active {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        margin: 10px 20px 20px 20px;
         
     }
 
     .activity__doble {
         display: flex;
         flex-direction: column;
-        margin:auto;
+        flex-wrap: wrap;
+                       
     }
 
     .photo__a {
         display: flex;
         flex-direction: column;
-        border-radius: 10%;            
-        position: relative;
-        overflow: hidden;
-        box-shadow: 5px 5px 10px #F2F2F2;
         width: 270px;
-        margin: 15px auto;
+        border-radius: 20px;            
+        box-shadow: 5px 5px 10px #949393;
+        margin: 5px;
 
     }
 
+    .photo__a:hover {
+        box-shadow: 5px 5px 10px #DEEBFF;
+    }
+    
+
     .photo__a--big {
-        height: 400px;
+        height: 380px;
     }
 
     .photo__a--medium {
@@ -689,109 +676,62 @@ figure:active {
     }
 
     .pic__a {
-        z-index: 1;
-        background-size: cover;
-        position: absolute;
+        border-radius: 20px 20px 0 0;     
+        width: 270px;
     }
 
     .pic__a--big {
-        width: auto;            
-        height: 360px;
+                
+        height: 340px;
+        object-fit: cover;
     }
 
     .pic__a--medium {
-        width: 270px;            
-        height: auto;
-        top: -20%;
-        bottom: -25%;
+        height: 180px;
 
     }
 
     .pic__a--small {
-        width: 270px;
-        height: auto;
-        top: -20%;
+        height: 110px;
     }
 
-    .photo__band--a {
-        position: absolute;
-        background-color: white;
-        z-index: 2;
-        width: 280px;
-        height: 45px;
+    @media all and (max-width: 991px) {
 
-    }
-
-    .photo__band--ab {
-        top: 90%;
-    }
-
-    .photo__band--am {
-        top: 80%;
-    }
-
-    .photo__band--as {
-        top: 70%;
-    }
-
-    @media all and (max-width: 796px) {
-
-        #activity {
-            padding-left: 40px;
+        .activity__offer {
+            align-items: center;
         }
 
-        .activity__title{
-            margin-left: 10px;
-            padding-left: 0%;
-        }
-
-        .photo__a {
-            display: flex;
-            flex-direction: row;
-            width: 300px;
-            height: 180px;
-            border-radius: 10%;
-            background-color: white;
-            margin: 0px 0px 25px 30px;
-            position: relative;
-            overflow: hidden;
-            margin-left: 0%;
-        }
-
-        .pic__a {
-            padding: 2% 0% 2% 2%;
-            border-radius: 10% 0% 0% 10%;     
-            z-index: 1;
-            background-size: cover;
-            width: 300px;
-            height: auto;
-            position: absolute;
-            top:-40%;
-            
-        }
-
-        .photo__band--a {
-            position: absolute;
-            background-color: white;
-            z-index: 2;
-            width: 300px;
-            height: 55px;
-            top: 70%;
-            line-height: 6px;
-                
+        .activity__title {
+            padding-left: 20px;
         }
 
         .activity__doble {
-            margin-left: 0%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+                                              
         }
 
-        
 
+        .photo__a {
+            width: 300px;
+            height: 170px;
+            margin-bottom: 15px;
+            
+        }
+
+           
+        .pic__a {
+            width: 300px;
+            height: 120px;
+            object-fit: cover;
+                        
+        }
+           
     }
 
-
-
-
+    
+       
     /* Style du footer */
 
     #footer {
