@@ -565,7 +565,7 @@ figure {
 
     .popular__icon {
         position: absolute;
-        top: 35%;
+        top: 30%;
         right: 10%;
     }
 
@@ -595,7 +595,7 @@ figure {
         .pic__p {
             padding: 2% 0% 2% 2%;
             border-radius: 20px 0 0 20px;     
-            width: 150px;
+            width: 130px;
             height: 120px;
             
         }
@@ -683,6 +683,7 @@ figure {
     .pic__a--big {
                 
         height: 340px;
+        object-fit: cover;
     }
 
     .pic__a--medium {
@@ -723,6 +724,7 @@ figure {
         .pic__a {
             width: 300px;
             height: 120px;
+            object-fit: cover;
                         
         }
            
