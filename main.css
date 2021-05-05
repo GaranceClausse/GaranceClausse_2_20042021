@@ -15,12 +15,6 @@
  
 }
 
-@media all and (max-width:796px) {
-    #page {
-        font-size: 120%;
-        height: auto;
-    }
-}
 
 h1 {
     font-weight: 800;
@@ -52,29 +46,6 @@ a {
     font-family: 'Raleway', sans-serif;
     margin: 0%;
 }
-
-/* Style des icones */
-
-figure {
-    background-color: white;
-}
-
-
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
-    color: #0065FC;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-}
-
-.note--blue, .fa-info {
-    color: #0065FC;
-}
-
-.note--grey {
-    color: #F2F2F2;
-}
-
-
 
 
 /* Style du header*/
@@ -280,7 +251,7 @@ figure {
     }
 }
 
-@media all and (max-width: 380px) {
+@media all and (max-width: 370px) {
 
     .search__input{
         width: 110px;
@@ -311,8 +282,8 @@ figure {
 .filter__bubble {
     display: flex;
     flex-direction: row;
-    margin: 10px 12px 0 0;
-    padding-right: 10px;
+    margin: 10px 10px 0 0;
+    padding-right: 8px;
     border: #F2F2F2 solid 2px;    
     border-radius : 20%/ 50%;
     align-items: center;  
@@ -329,8 +300,8 @@ figure {
     color: #0065FC;
     border-radius: 100%;
     margin: 0 7px 0 0;
-    padding: 15px;
-
+    padding: 12px;
+    
     }
 
     
@@ -471,7 +442,7 @@ figure {
         
     }
 
-        
+          
 
 
 
@@ -520,6 +491,14 @@ figure {
     .note {
         margin: 3% 6%;
         font-size: 10px;
+    }
+
+    .note--blue {
+        color: #0065FC;
+    }
+    
+    .note--grey {
+        color: #F2F2F2;
     }
 
     .photo__band {
@@ -759,4 +738,5 @@ figure {
 
     li.footer__list {
         margin: 10px;
+        font-size: 15px;
     }
