@@ -243,9 +243,13 @@ a {
 @media all and (max-width: 796px) {
     .search__button {
         visibility: hidden;
+        width: 1px;
+        height: 1px;
+        padding: 0;
         
     }
-    
+
+       
     .fa-search {
         visibility: visible;
     }
@@ -346,6 +350,8 @@ a {
         border-radius: 20px;
         width: 450px;
         margin: 10px 15px;
+        align-content: center;
+        align-items: center;
     }
 
      
@@ -392,14 +398,10 @@ a {
             width: auto;
         }
         
-        .accomodation__title {
-            text-align: center;
-        }
-
-        
+               
     }
 
-    @media all and (max-width: 1024px) and (min-width: 796px) {
+    @media all and (max-width: 1080px) and (min-width: 796px) {
 
         #popular {
             width: 45%;
@@ -451,11 +453,11 @@ a {
     .photo__h {
         display: flex;
         flex-direction: column;
-        width: 220px;
+        width: 210px;
         height: 180px;
         border-radius: 10%;
         background-color: white;
-        margin: 0 2% 9% 1%;
+        margin: 10px;
         box-shadow: 5px 5px 10px #949393;
         
     }
@@ -467,7 +469,7 @@ a {
     .pic__h {
         padding: 2% 2% 0% 2%;
         border-radius: 20px 20px 0 0;     
-        width: 210px;
+        width: 200px;
         height: 105px;
         
     }
@@ -528,42 +530,49 @@ a {
     .popular__title {
         font-weight: 800;
         font-size: 21px;
+        padding-left: 35px;
 
     }
-    @media all and (max-width: 991px) {
-       .popular__title {
-           margin: 8px 40px;
-       }     
+
+    .popular__icon {
+        padding-top: 7px;
     }
 
+    
     .popular__header {
         margin: 10px 0px 5px 10px;
         padding: 3%;
         position: relative;
+        align-items: center;
+        justify-content: center; 
     }
 
     .popular__icon {
         position: absolute;
         top: 30%;
         right: 10%;
+        padding-top: 2px;
     }
 
-    .popular__offer a {
-        padding: 3%;
+    @media all and (max-width: 991px) {
+        .popular__header {
+            padding: 10px 5px;
+        }
     }
 
+    
 
         /* Style des photos de popular */
 
         .photo__p {
             display: flex;
             flex-direction: row;
-            width: 300px;
             height: 130px;
+            width: 300px;
             border-radius: 20px;
             background-color: white;
-            margin: 0 3% 7% 3%;
             box-shadow: 5px 5px 10px #949393;
+            margin: 10px 5px;
                         
         }
 
@@ -579,18 +588,31 @@ a {
             
         }
 
-        .photo__price--p {
-          margin-bottom: 20%;
+        
+        @media all and (max-width: 991px) and (min-width: 796px) {
+            .photo__p {
+                height: 185px;
+                width: 320px;
+                margin-bottom: 40px;
+            }
+
+            .pic__p {
+                height: 175px;
+            }
         }
 
-        @media all and (max-width: 991px) {
+        @media all and (max-width: 796px) {
+
             .photo__p {
-                height: 135px; 
+                height: 135px;
+                width: 280px;
+                margin: 10px 5px;
             }
 
             .pic__p {
                 height: 125px;
             }
+
         }
 
          
@@ -614,7 +636,7 @@ a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-content: center;
         margin: 10px 20px 20px 20px;
         
@@ -630,10 +652,10 @@ a {
     .photo__a {
         display: flex;
         flex-direction: column;
-        width: 270px;
+        width: 250px;
         border-radius: 20px;            
         box-shadow: 5px 5px 10px #949393;
-        margin: 5px;
+        margin: 5px 10px;
 
     }
 
@@ -656,7 +678,7 @@ a {
 
     .pic__a {
         border-radius: 20px 20px 0 0;     
-        width: 270px;
+        width: 250px;
     }
 
     .pic__a--big {
@@ -672,6 +694,16 @@ a {
 
     .pic__a--small {
         height: 110px;
+    }
+
+    @media all and (max-width: 1150px) {
+        .photo__a {
+            width: 210px;
+        }
+
+        .pic__a {
+            width: 210px;
+        }
     }
 
     @media all and (max-width: 991px) {
