@@ -2,7 +2,7 @@
 #page {
     font-family: 'Raleway', sans-serif;
     width: 1200px;
-    margin: auto;
+    
     
 }
 
@@ -59,13 +59,14 @@ a {
 }
 
 .header__logo {
-    margin: 10px 0px 10px 40px;
+    margin: 10px 0px 10px 30px;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
+    align-items: center;
     padding-right: 60px;
 }
 
@@ -99,6 +100,7 @@ a {
     display: flex;
     align-items: center;
     margin-left: 15px; 
+    padding-top: 15px;
 }
 
 .signin__link {
@@ -118,7 +120,8 @@ a {
     .nav {
         width: 100%;
         display: block;
-    
+        justify-content: center;
+            
     }
 
     .menu {
@@ -126,7 +129,7 @@ a {
     }
 
     .menu__list {
-        margin: 40px 0;
+        margin: 20px 0;
         width: 100%;
         display: block;
     }
@@ -145,7 +148,7 @@ a {
 
     
     nav li {
-        padding-bottom: 30px;
+        padding-bottom: 15px;
         width: 50%;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
@@ -166,8 +169,12 @@ a {
 
     .signin {
         position: absolute;
-        top: 35px;
-        right: 15%;
+        top: 20px;
+        right: 35px;
+    }
+
+    .header__logo {
+        margin-left: 8%;
     }
     
   }
@@ -179,7 +186,7 @@ a {
 /* Style de la bar de recherche*/
 
 #search {
-    margin: 0 40px;
+    margin: 0 25px;
 }
 
 .search__title{
@@ -199,12 +206,10 @@ a {
 }
 
 .search__icon {
-
     background-color: #F2F2F2;
     padding: 12px 15px;
     margin-left: 0;
     border-radius: 20% 0 0 20%;
-    
 }
 	
 
@@ -218,7 +223,6 @@ a {
     font-weight: 600;
     font-size: 15px;
     z-index: 2;
-    
 }
 
 .search__input {
@@ -227,6 +231,7 @@ a {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 15px;
+    width: 200px;
         
 }
 
@@ -258,7 +263,7 @@ a {
 @media all and (max-width: 370px) {
 
     .search__input{
-        width: 110px;
+        width: 140px;
     }
 
     
@@ -272,7 +277,7 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    font-size: 10px;
+    
     align-items: center;
     margin: 25px 0 0 0;
 
@@ -280,18 +285,19 @@ a {
 
 
 .filter__title {
-    margin: 15px 20px 10px 0;
+    margin: 15px 20px 5px 0;
+    font-size: 15px;
 }
 
 .filter__bubble {
     display: flex;
     flex-direction: row;
-    margin: 10px 10px 0 0;
+    margin: 10px 8px 0 0;
     padding-right: 8px;
     border: #F2F2F2 solid 2px;    
-    border-radius : 20%/ 50%;
-    align-items: center;  
-
+    border-radius : 20px;
+    align-items: center;
+    position: relative;
 }
 
 .filter__bubble:hover {
@@ -302,11 +308,20 @@ a {
 .filter__icon {
     background-color: #DEEBFF;
     color: #0065FC;
-    border-radius: 100%;
+    border-radius: 20px;
     margin: 0 7px 0 0;
-    padding: 12px;
-    
-    }
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    left: -2px;
+}
+
+.filter__text {
+    padding-left: 30px;
+    margin: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
 
     
 
@@ -319,15 +334,22 @@ a {
 .info {
     color: #0065FC;
     font-size: 12px;
-    border-radius: 50%;
+    border-radius: 20px;
     border: 1px #F2F2F2 solid;
-    margin: 0 7px 3px 0;
-    padding: 5px 8px;
+    margin: 0 7px 15px 0;
+    padding: 3px 8px;
     
     }
 
 .info__title {
-    margin: 20px 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info__text {
+    width: 280px;
 }
 
 
@@ -471,7 +493,7 @@ a {
         border-radius: 20px 20px 0 0;     
         width: 200px;
         height: 105px;
-        
+        object-fit: cover;
     }
 
     .img-name {
@@ -512,14 +534,13 @@ a {
         .photo__h {
             box-shadow: 5px 5px 10px #949393;
             width: 300px;
-            height: 195px;
+            height: 175px;
             
         }
 
         .pic__h {
             width: 290px;
-            height: 120px;
-                        
+            height: 100px;
         }
 
     }
@@ -529,15 +550,11 @@ a {
     .popular__title {
         font-weight: 800;
         font-size: 21px;
-        padding-left: 35px;
+        padding-left: 25px;
 
     }
 
-    .popular__icon {
-        padding-top: 7px;
-    }
-
-    
+        
     .popular__header {
         margin: 10px 0px 5px 10px;
         padding: 3%;
@@ -550,12 +567,16 @@ a {
         position: absolute;
         top: 30%;
         right: 10%;
-        padding-top: 2px;
+        padding-top: 7px;
     }
 
     @media all and (max-width: 991px) {
         .popular__header {
             padding: 10px 5px;
+        }
+
+        .popular__title {
+            margin-bottom: 0;
         }
     }
 
@@ -584,7 +605,7 @@ a {
             border-radius: 20px 0 0 20px;     
             width: 130px;
             height: 120px;
-            
+            object-fit: cover;
         }
 
         .photo__band--p {
@@ -614,7 +635,7 @@ a {
 
             .photo__p {
                 height: 135px;
-                width: 280px;
+                width: 290px;
                 margin: 10px 5px;
             }
 
@@ -721,10 +742,7 @@ a {
             align-items: center;
         }
 
-        .activity__title {
-            padding-left: 20px;
-        }
-
+        
         .activity__doble {
             display: flex;
             flex-direction: row;
@@ -757,15 +775,14 @@ a {
     #footer {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 40px;
         
     }
 
     .footer {
-        align-items: stretch;
-        margin: 20px 80px 10px 0;
+        
+        margin: 20px 80px 0 0;
     }
 
     .footer__title {
@@ -775,9 +792,16 @@ a {
 
     ul {
         list-style: none;
+        margin-bottom: 0;
     }
 
     li.footer__list {
         margin: 10px;
         font-size: 15px;
+    }
+
+    @media all and (max-width: 796px) {
+        #footer {
+           
+        }
     }
