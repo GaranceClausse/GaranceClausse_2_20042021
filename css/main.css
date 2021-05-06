@@ -65,6 +65,7 @@ a {
 
 
 .menu__list__1 {
+    list-style: none;
     display: flex;
     align-items: center;
 }
@@ -91,7 +92,6 @@ a {
     display: flex;
     align-items: center;
     margin-left: 15px; 
-    padding-top: 15px;
 }
 
 .signin__link {
@@ -122,7 +122,7 @@ a {
         display: block;
     }
 
-    .menu__list__1 {
+    .menu__list__1 {    
        margin: 0;
        padding-left: 0%;
     }
@@ -154,7 +154,7 @@ a {
 
     .signin {
         position: absolute;
-        top: 20px;
+        top: 35px;
         right: 35px;
     }
 
@@ -267,7 +267,7 @@ a {
     flex-direction: row;
     margin: 10px 8px 0 0;
     padding-right: 8px;
-    border: #F2F2F2 solid 2px;    
+    border: #F2F2F2 solid 3px;    
     border-radius : 20px;
     align-items: center;
     position: relative;
@@ -296,21 +296,14 @@ a {
     font-weight: bold;
 }
 
-@media all and (max-width: 796px) {
-    .filter__title {
-        margin-right: 700px;
-    }
-}
-
 .info {
     color: #0065FC;
     font-size: 12px;
     border-radius: 20px;
-    border: 1px #F2F2F2 solid;
-    margin: 0 7px 15px 0;
+    border: 2px #F2F2F2 solid;
+    margin: 15px 7px 15px 0;
     padding: 3px 8px;
-    
-    }
+}
 
 .info__title {
     margin: 10px 0;
@@ -318,6 +311,17 @@ a {
     flex-direction: row;
     align-items: center;
 }
+
+@media all and (max-width: 796px) {
+    .filter__title {
+        margin-right: 700px;
+    }
+
+    .info {
+        margin-top: 0;
+    }
+}
+
 
     /* Style du milieu de page : accomodations populaires*/
 
@@ -603,10 +607,8 @@ a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-content: center;
-        margin: 10px 20px 20px 20px;
-        
     }
 
     .activity__doble {
@@ -711,12 +713,13 @@ a {
 
 .footer__title {
     font-size: 17px;
-    margin: 15px 50px;
+    margin: 15px 35px;
 }
 
-ul {
+.footer__item {
     list-style: none;
     margin-bottom: 0;
+    padding-left: 25px;
 }
 
 li.footer__list {
