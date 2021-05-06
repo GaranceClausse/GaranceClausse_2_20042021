@@ -2,19 +2,14 @@
 #page {
     font-family: 'Raleway', sans-serif;
     width: 1200px;
-    
-    
 }
 
 @media all and (max-width: 1200px) {
     #page {
         width: auto;
         font-size: auto;
-        
     }
- 
 }
-
 
 h1 {
     font-weight: 800;
@@ -24,7 +19,6 @@ h1 {
 h3 {
     font-weight: 300;
     font-size: 15px;
-    
 }
 
 a {
@@ -34,7 +28,6 @@ a {
 
 #accomodation {
     background-color: #F2F2F2;
-   
 }
 
 #popular {
@@ -74,13 +67,11 @@ a {
 .menu__list__1 {
     display: flex;
     align-items: center;
-    
 }
 
 .menu__list {
     display: flex;
     align-items: center;
-    
 }
 
 .menu__item {
@@ -107,8 +98,6 @@ a {
     text-decoration: none;
     font-weight: 700;
     color: #0065fc;
-    
-    
 }
 
   @media all and (max-width: 796px) {
@@ -121,7 +110,6 @@ a {
         width: 100%;
         display: block;
         justify-content: center;
-            
     }
 
     .menu {
@@ -137,8 +125,6 @@ a {
     .menu__list__1 {
        margin: 0;
        padding-left: 0%;
-       
-
     }
 
     nav ul {
@@ -146,7 +132,6 @@ a {
         margin-left: 0;
     }
 
-    
     nav li {
         padding-bottom: 15px;
         width: 50%;
@@ -200,9 +185,6 @@ a {
     align-items: center;
     padding: 11px 0px;
     border: 1px solid #F2F2F2;
-    
-
-
 }
 
 .search__icon {
@@ -211,7 +193,6 @@ a {
     margin-left: 0;
     border-radius: 20% 0 0 20%;
 }
-	
 
 .search__button{
     background-color: #0065FC;
@@ -232,7 +213,6 @@ a {
     font-weight: 800;
     font-size: 15px;
     width: 200px;
-        
 }
 
 .fa-search {
@@ -242,7 +222,6 @@ a {
     color: white;
     padding: 13px 15px;
     border-radius: 0% 20% 20% 0%;
-    
 }
 
 @media all and (max-width: 796px) {
@@ -251,10 +230,8 @@ a {
         width: 1px;
         height: 1px;
         padding: 0;
-        
     }
 
-       
     .fa-search {
         visibility: visible;
     }
@@ -265,8 +242,6 @@ a {
     .search__input{
         width: 140px;
     }
-
-    
 }
 
 
@@ -277,10 +252,8 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    
     align-items: center;
     margin: 25px 0 0 0;
-
 }
 
 
@@ -323,8 +296,6 @@ a {
     font-weight: bold;
 }
 
-    
-
 @media all and (max-width: 796px) {
     .filter__title {
         margin-right: 700px;
@@ -348,18 +319,12 @@ a {
     align-items: center;
 }
 
-.info__text {
-    width: 280px;
-}
-
-
     /* Style du milieu de page : accomodations populaires*/
 
     #acco-pop {
         display:flex;
         flex-direction: row;
         justify-content: space-around;
-        
     }
 
     #accomodation {
@@ -375,8 +340,6 @@ a {
         align-content: center;
         align-items: center;
     }
-
-     
 
     .accomodation__offer {
         display: flex;
@@ -418,9 +381,7 @@ a {
 
         #popular {
             width: auto;
-        }
-        
-               
+        }  
     }
 
     @media all and (max-width: 1080px) and (min-width: 796px) {
@@ -431,9 +392,7 @@ a {
 
         #accomodation {
             width: 50%;
-        }
-
-                        
+        }         
     }
 
 
@@ -443,7 +402,6 @@ a {
             flex-direction: column-reverse;
             justify-content: space-around;
             margin-bottom: 0;
-            
         }
 
         #accomodation {
@@ -453,22 +411,14 @@ a {
         #popular {
             border-radius: 0%;
             margin: 0;
-            
         }
 
         .popular__offer {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            
         }
-
-        
     }
-
-          
-
-
 
     /*Style des photos d'hébergement*/
 
@@ -481,7 +431,6 @@ a {
         background-color: white;
         margin: 10px;
         box-shadow: 5px 5px 10px #949393;
-        
     }
 
     .photo__h:hover {
@@ -501,15 +450,12 @@ a {
         font-weight: 800;
         padding: 0 6%;
         word-break: break-word;
-        
-
     }
 
     .photo__price {
         font-size: 12px;
         font-weight: 600;
         margin: 0 6%;
-
     }
 
     .note {
@@ -531,18 +477,17 @@ a {
     }
 
     @media all and (max-width: 991px) {
+
         .photo__h {
             box-shadow: 5px 5px 10px #949393;
             width: 300px;
             height: 175px;
-            
         }
 
         .pic__h {
             width: 290px;
             height: 100px;
         }
-
     }
 
     /* Style de l'encart populaire*/
@@ -551,7 +496,6 @@ a {
         font-weight: 800;
         font-size: 21px;
         padding-left: 25px;
-
     }
 
         
@@ -582,41 +526,40 @@ a {
 
     
 
-        /* Style des photos de popular */
+    /* Style des photos de popular */
 
-        .photo__p {
-            display: flex;
-            flex-direction: row;
-            height: 130px;
-            width: 300px;
-            border-radius: 20px;
-            background-color: white;
-            box-shadow: 5px 5px 10px #949393;
-            margin: 10px 5px;
-                        
-        }
+    .photo__p {
+        display: flex;
+        flex-direction: row;
+        height: 130px;
+        width: 300px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 5px 5px 10px #949393;
+        margin: 10px 5px;
+    }
 
-        .photo__p:hover {
-            box-shadow: 5px 5px 10px #DEEBFF;
-        }
+    .photo__p:hover {
+        box-shadow: 5px 5px 10px #DEEBFF;
+    }
 
-        .pic__p {
-            padding: 2% 0% 2% 2%;
-            border-radius: 20px 0 0 20px;     
-            width: 130px;
-            height: 120px;
-            object-fit: cover;
-        }
+    .pic__p {
+        padding: 2% 0% 2% 2%;
+        border-radius: 20px 0 0 20px;     
+        width: 130px;
+        height: 120px;
+        object-fit: cover;
+    }
 
-        .photo__band--p {
-            position: relative;
-        }
+    .photo__band--p {
+        position: relative;
+    }
 
-        .note--p {
-            position: absolute;
-            bottom: 5px;
-            left: 5px;
-        }
+    .note--p {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
 
         
         @media all and (max-width: 991px) and (min-width: 796px) {
@@ -642,19 +585,13 @@ a {
             .pic__p {
                 height: 125px;
             }
-
         }
 
          
-
-       
-
-
     /* Style du bandeau activités */
 
     #activity {
         margin: 10px 0px;
-               
     }
 
     .activity__title{
@@ -676,7 +613,6 @@ a {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-                       
     }
 
     .photo__a {
@@ -686,13 +622,11 @@ a {
         border-radius: 20px;            
         box-shadow: 5px 5px 10px #949393;
         margin: 5px 10px;
-
     }
 
     .photo__a:hover {
         box-shadow: 5px 5px 10px #DEEBFF;
     }
-    
 
     .photo__a--big {
         height: 380px;
@@ -712,14 +646,12 @@ a {
     }
 
     .pic__a--big {
-                
         height: 340px;
         object-fit: cover;
     }
 
     .pic__a--medium {
         height: 180px;
-
     }
 
     .pic__a--small {
@@ -746,62 +678,48 @@ a {
         .activity__doble {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-                                              
+            justify-content: space-around; 
         }
-
 
         .photo__a {
             width: 300px;
             height: 170px;
             margin-bottom: 15px;
-            
         }
 
-           
         .pic__a {
             width: 300px;
             height: 120px;
             object-fit: cover;
-                        
         }
-           
     }
 
     
        
-    /* Style du footer */
+/* Style du footer */
 
-    #footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-top: 40px;
-        
-    }
+#footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
 
-    .footer {
-        
-        margin: 20px 80px 0 0;
-    }
+.footer {
+    margin: 20px 80px 0 0;
+}
 
-    .footer__title {
-        font-size: 17px;
-        margin: 15px 50px;
-    }
+.footer__title {
+    font-size: 17px;
+    margin: 15px 50px;
+}
 
-    ul {
-        list-style: none;
-        margin-bottom: 0;
-    }
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
 
-    li.footer__list {
-        margin: 10px;
-        font-size: 15px;
-    }
-
-    @media all and (max-width: 796px) {
-        #footer {
-           
-        }
-    }
+li.footer__list {
+    margin: 10px;
+    font-size: 15px;
+}
