@@ -2,12 +2,12 @@
 #page {
     font-family: 'Raleway', sans-serif;
     width: 1200px;
+    margin: auto;
 }
 
 @media all and (max-width: 1200px) {
     #page {
         width: auto;
-        font-size: auto;
     }
 }
 
