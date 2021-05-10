@@ -8,8 +8,10 @@
 @media all and (max-width: 1200px) {
     #page {
         width: auto;
+        margin: 0;
     }
 }
+
 
 h1 {
     font-weight: 800;
@@ -86,13 +88,8 @@ a {
     font-weight: 500;
     color:#0065FC;
     border-top: solid #0065FC 1px;
-  }
-
-.signin {
-    display: flex;
-    align-items: center;
-    margin-left: 15px; 
 }
+
 
 .signin__link {
     text-decoration: none;
@@ -160,13 +157,10 @@ a {
 
     .header__logo {
         margin-left: 8%;
-    }
-    
+    }    
   }
 
-  
-
-
+ 
 
 /* Style de la bar de recherche*/
 
@@ -181,7 +175,7 @@ a {
 .search__bar {
     width: 300px;
     overflow: hidden;
-    border-radius: 20%;
+    border-radius: 20px;
     align-items: center;
     padding: 11px 0px;
     border: 1px solid #F2F2F2;
@@ -191,7 +185,7 @@ a {
     background-color: #F2F2F2;
     padding: 12px 15px;
     margin-left: 0;
-    border-radius: 20% 0 0 20%;
+    border-radius: 10px 0 0 10px;
 }
 
 .search__button{
@@ -199,7 +193,7 @@ a {
     border: none;
     color: white;
     padding: 13px 15px;
-    border-radius: 0% 20% 20% 0%;
+    border-radius: 0 10px 10px 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -221,7 +215,7 @@ a {
     background-color: #0065FC;
     color: white;
     padding: 13px 15px;
-    border-radius: 0% 20% 20% 0%;
+    border-radius: 0 10px 10px 0;
 }
 
 @media all and (max-width: 796px) {
@@ -238,7 +232,6 @@ a {
 }
 
 @media all and (max-width: 370px) {
-
     .search__input{
         width: 140px;
     }
@@ -282,7 +275,6 @@ a {
     background-color: #DEEBFF;
     color: #0065FC;
     border-radius: 20px;
-    margin: 0 7px 0 0;
     padding: 10px;
     font-size: 12px;
     position: absolute;
@@ -332,7 +324,7 @@ a {
     }
 
     #accomodation {
-        border-radius: 2%;
+        border-radius: 20px;
         width: 870px;
         margin: 10px 15px;
     }
@@ -345,39 +337,7 @@ a {
         align-items: center;
     }
 
-    .accomodation__offer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: center;
-        margin: 10px 20px 20px 20px;
-
-    }
-
-    .popular__offer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: center;
-        margin: 10px 20px 20px 20px;
-    }
-
-    .accomodation__title {
-        margin: 25px 0px 5px 10px;
-        padding: 3%;
-        font-weight: 800;
-        font-size: 21px;
-    }
-
-    .plus {
-        margin: 0px 0px 5px 25px;
-        padding: 3%;
-        font-size: 17px;
-        font-weight: 800;
-    }
-
+    
     @media all and (max-width: 1024px) {
         #accomodation {
             width: auto;
@@ -388,7 +348,7 @@ a {
         }  
     }
 
-    @media all and (max-width: 1080px) and (min-width: 796px) {
+    @media all and (max-width: 1024px) and (min-width: 796px) {
 
         #popular {
             width: 45%;
@@ -417,21 +377,33 @@ a {
             margin: 0;
         }
 
-        .popular__offer {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
     }
 
-    /*Style des photos d'hébergement*/
+    /*Style de l'encart hébergement*/
+
+    .accomodation__offer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        margin: 10px 20px 20px 20px;
+
+    }
+
+    .accomodation__title {
+        margin: 25px 0px 5px 10px;
+        padding: 3%;
+        font-weight: 800;
+        font-size: 21px;
+    }
 
     .photo__h {
         display: flex;
         flex-direction: column;
         width: 210px;
         height: 180px;
-        border-radius: 10%;
+        border-radius: 20px;
         background-color: white;
         margin: 10px;
         box-shadow: 5px 5px 10px #949393;
@@ -452,18 +424,18 @@ a {
     .img-name {
         font-size: 15px;
         font-weight: 800;
-        padding: 0 6%;
+        padding: 0 10px;
         word-break: break-word;
     }
 
     .photo__price {
         font-size: 12px;
         font-weight: 600;
-        margin: 0 6%;
+        margin: 0 10px;
     }
 
     .note {
-        margin: 3% 6%;
+        margin: 8px 10px;
         font-size: 10px;
     }
 
@@ -477,7 +449,6 @@ a {
 
     .photo__band {
         line-height: 8px;
-
     }
 
     @media all and (max-width: 991px) {
@@ -492,6 +463,13 @@ a {
             width: 290px;
             height: 100px;
         }
+    }
+
+    .plus {
+        margin: 0px 0px 5px 25px;
+        padding: 3%;
+        font-size: 17px;
+        font-weight: 800;
     }
 
     /* Style de l'encart populaire*/
@@ -516,6 +494,15 @@ a {
         top: 30%;
         right: 10%;
         padding-top: 7px;
+    }
+
+    .popular__offer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        margin: 10px 20px 20px 20px;
     }
 
     @media all and (max-width: 991px) {
@@ -566,30 +553,36 @@ a {
     }
 
         
-        @media all and (max-width: 991px) and (min-width: 796px) {
-            .photo__p {
-                height: 185px;
-                width: 320px;
-                margin-bottom: 40px;
-            }
-
-            .pic__p {
-                height: 175px;
-            }
+    @media all and (max-width: 991px) and (min-width: 796px) {
+        .photo__p {
+            height: 185px;
+            width: 320px;
+            margin-bottom: 40px;
         }
 
-        @media all and (max-width: 796px) {
-
-            .photo__p {
-                height: 135px;
-                width: 290px;
-                margin: 10px 5px;
-            }
-
-            .pic__p {
-                height: 125px;
-            }
+        .pic__p {
+            height: 175px;
         }
+    }
+
+    @media all and (max-width: 796px) {
+
+        .photo__p {
+            height: 125px;
+            width: 290px;
+            margin: 10px 5px;
+        }
+
+        .pic__p {
+            height: 115px;
+        }
+
+        .popular__offer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
 
          
     /* Style du bandeau activités */
@@ -598,7 +591,7 @@ a {
         margin: 10px 0px;
     }
 
-    .activity__title{
+    .activity__title {
         margin: 20px 0px 10px 30px;
         padding: 3% 0;
     }
@@ -698,7 +691,7 @@ a {
 
     
        
-/* Style du footer */
+        /* Style du footer */
 
 #footer {
     display: flex;
