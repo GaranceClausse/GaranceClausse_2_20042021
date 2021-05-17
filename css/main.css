@@ -191,7 +191,7 @@ a {
     border-radius: 10px 0 0 10px;
 }
 
-.search__button{
+.search__button {
     background-color: #0065FC;
     border: none;
     color: white;
@@ -240,8 +240,14 @@ a {
 }
 
 @media all and (max-width: 370px) {
-    .search__input{
+    .search__input {
         width: 140px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .search__input {
+        width: 110px;
     }
 }
 
@@ -473,6 +479,28 @@ a {
         }
     }
 
+    @media all and (max-width: 300px) {
+
+        .photo__h {
+            box-shadow: 5px 5px 10px #949393;
+            width: 220px;
+            height: 135px;
+        }
+
+        .pic__h {
+            width: 210px;
+            height: 70px;
+        }
+
+        .photo__price {
+            font-size: 10px;
+        }
+
+        .note {
+            margin-bottom: 3px;
+        }
+    }
+
     .plus {
         margin: 0px 0px 5px 25px;
         padding: 3%;
@@ -520,6 +548,12 @@ a {
 
         .popular__title {
             margin-bottom: 0;
+        }
+    }
+
+    @media all and (max-width: 300px) {
+        .popular__icon {
+          visibility: hidden;  
         }
     }
 
@@ -590,6 +624,21 @@ a {
             flex-direction: row;
             flex-wrap: wrap;
         }
+    }
+
+    @media all and (max-width: 300px) {
+        .photo__p {
+            width: 220px;            
+        }
+
+        .pic__p {
+            width: 110px;            
+        }
+
+        .img-name {
+            font-size: 12px;
+        }
+
     }
 
          
@@ -697,7 +746,21 @@ a {
         }
     }
 
-    
+    @media all and (max-width: 300px) {
+
+        .photo__a {
+            box-shadow: 5px 5px 10px #949393;
+            width: 220px;
+            height: 135px;
+        }
+
+        .pic__a {
+            width: 220px;
+            height: 100px;
+        }
+    }
+
+            
        
         /* Style du footer */
 
